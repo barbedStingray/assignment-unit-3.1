@@ -106,19 +106,23 @@ console.log( colors );
 let gems = ['Topaz', 'Citrine', 'Diamond', 'Emerald', 'Iolite', 'Tanzanite'];
 console.log( gems );
 // 5.a (STRETCH) TODO: Replace the second gem with 'Tourmaline'
+gems[1] = 'Tourmaline';
 //      Console log the updated array.
 console.log( gems );
 
 // 5.b (STRETCH) TODO: Sort your gems array
 //     in reverse alphabetical order.
+gems.sort();
+gems.reverse();
 //     Console log the array.
-
+console.log( gems );
 
 // 5.c (STRETCH) TODO: Create a variable `gemString` and
 //     put the word "and" between each item. Research `.join()`.
 //     eg "Tourmaline and Topaz and Tanzanite and Iolite and Emerald and Diamond".
 //     Console log the string.
-
+let gemString = gems.join( ' and ' )
+console.log( gemString );
 
 // 5.d (STRETCH) TODO: Make a new array `colorfulGems` that combines 
 //     the gems array with the colors array.
@@ -126,6 +130,11 @@ console.log( gems );
 //     It should look something like:
 //     ['Tourmaline', 'Topaz', 'Tanzanite', 'Iolite', 'Emerald', 'Diamond', 'yellow', 'green']
 
+let color = ['blue', 'white'];
+
+colorfulGems = gems.concat( color );
+
+console.log( colorfulGems );
 
 
 
